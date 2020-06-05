@@ -1,0 +1,20 @@
+*{ padding: 0; margin: 0; }
+
+@import 'mixin';
+
+@import 'variables';
+
+header { @include header(#2c3e50, #d35400);
+
+h1 { @include commoncode;
+	&:hover{
+	color: $hovercolor;
+	}
+}
+
+p { @include commoncode;}
+}
+
+.second { @include header(#8e44ad, #2ecc71);
+	
+}
